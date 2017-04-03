@@ -25,7 +25,6 @@ public class SecondActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
 
-
         schoolName = (EditText) findViewById(R.id.school_name);
         numberOfStudents = (EditText) findViewById(R.id.number_of_students);
         doesItHaveProgrammingCourse = (CheckBox) findViewById(R.id.has_programming_course);
@@ -36,14 +35,13 @@ public class SecondActivity extends AppCompatActivity {
         String schoolName1 = schoolName.getText().toString();
         String students = numberOfStudents.getText().toString();
         int numberOfStudents1 = Integer.parseInt(students);
-        boolean hasProgrammingC;
-        hasProgrammingC = doesItHaveProgrammingCourse.isChecked();
+        boolean hasProgrammingC = doesItHaveProgrammingCourse.isChecked();
 
-        School s = new School(schoolName1, numberOfStudents1, hasProgrammingC);
+        School s = new School(schoolName1, hasProgrammingC, numberOfStudents1);
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
 
-        schoolRef.push().setValue(new School(schoolName1, numberOfStudents1, hasProgrammingC));
+        schoolRef.push().setValue(new School(schoolName1, hasProgrammingC, numberOfStudents1));
 
     }
 }

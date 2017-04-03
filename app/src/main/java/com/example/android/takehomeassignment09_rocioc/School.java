@@ -9,13 +9,13 @@ public class School {
 
     private String name;
     private int numberOfStudents;
-    private boolean programmingCourse;
+    private boolean hasProgrammingCourse;
 
 
-    public School(String name, int numberOfStudents, boolean programmingCourse) {
+    public School(String name, boolean hasProgrammingCourse, int numberOfStudents) {
         this.name = name;
         this.numberOfStudents = numberOfStudents;
-        this.programmingCourse = programmingCourse;
+        this.hasProgrammingCourse = hasProgrammingCourse;
     }
 
     public School() {
@@ -38,18 +38,18 @@ public class School {
         this.numberOfStudents = numberOfStudents;
     }
 
-    public boolean hasProgrammingCourse() {
-        return programmingCourse;
+    public boolean isHasProgrammingCourse() {
+        return hasProgrammingCourse;
     }
 
-    public void setProgrammingCourse(boolean programmingCourse) {
-        this.programmingCourse = programmingCourse;
+    public void setHasProgrammingCourse(boolean hasProgrammingCourse) {
+        this.hasProgrammingCourse = hasProgrammingCourse;
     }
 
     @Override
     public String toString() {
         return "Name: " + name +
                 "\nNumber of Students: " + numberOfStudents +
-                "\nDoes it have a programming course? " + programmingCourse + "\n";
+                "\nDoes it have a programming course? " + hasProgrammingCourse + "\n";
     }
 }
