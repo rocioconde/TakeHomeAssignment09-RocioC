@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "254558737501",
+    "firebase_url": "https://takehomeassignment09-rocioc.firebaseio.com",
+    "project_id": "takehomeassignment09-rocioc",
+    "storage_bucket": "takehomeassignment09-rocioc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:254558737501:android:29c0d958d2694589",
+        "android_client_info": {
+          "package_name": "com.example.android.takehomeassignment09_rocioc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "254558737501-gk944k7i63ptac9nqbjgc6d4i46a87jm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDF3-aRKtPYL-rogrgQe4VKvtDFrgTAckQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
